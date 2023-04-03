@@ -1,0 +1,449 @@
+:root{
+    --green: #10cb6c;
+    --light-green: #43c1a8;
+    --grey: #888a8b;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Catamaran';
+}
+.Lato-font{
+    font-family: 'Lato';
+}
+.fs-18{
+    font-size: 18px;
+}
+.py-100{
+    padding: 100px 0;
+}
+
+.light-green{
+    background-color: var(--light-green);
+}
+.transition{
+    transition: all 0.5s;
+}
+
+/* header */
+button.login{
+    background-color: var(--green);
+}
+button.login:hover{
+    background-color: #26de81;
+}
+.nav-item a.nav-link{
+    position: relative;
+}
+.nav-item a.nav-link::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.5s;
+}
+.nav-item a.nav-link:hover::before{
+    transform: scaleX(1);
+}
+.navbar-toggler{
+    position: sticky;
+    top: 20px;
+    right: 20px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* banner */
+.banner{
+    background-image: url("../img/bgimg10.jpg");
+    background-position-y: 65%;
+    background-size: cover;
+}
+a.btn-pill{
+    min-width: 180px;
+}
+a.btn-pill:hover, a.subscribe:hover{
+    background-color: #33d7b6;
+}
+a.btn-blue{
+    background-color: #00acfe;
+}
+a.btn-blue:hover{
+    background-color: #42c0fc;
+}
+.progress{
+    width: 75%;
+    height: 30px;
+    overflow: visible;
+    position: relative;
+}
+.progress-bar{
+    background-color: #0fc569;
+    overflow: visible;
+}
+.v-line{
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    top: -10px;
+    background-color: rgb(197, 197, 197);
+}
+.banner .card h5{
+    font-size: 70px;
+    font-weight: 700;
+}
+.brands{
+    background-color: #002339;
+    padding: 30px;
+    transform: translateY(50%);
+}
+
+/* mission */
+.mission{
+    padding-top: 150px;
+}
+.mission .card-subtitle{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--grey);
+    line-height: 1.4;
+}
+.mission .card-title, .sale .card-title{
+    font-size: 40px;
+    color: #404040;
+    line-height: 1.125;
+    font-weight: 600;
+}
+.mission .card p{
+    font-size: 18px;
+    color: var(--grey);
+}
+a.btn-transparent{
+    background-color: transparent;
+    border: 1px solid black;
+    color: #333;
+    font-weight: 500;
+}
+a.btn-transparent:hover{
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+    color: white;
+}
+
+/* title */
+.title span{
+    font-size: 18px;
+    color: var(--grey) ;
+}
+.title h3{
+    font-size: 40px;
+    color: #404040;
+    font-weight: 700;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* video */
+.video-img{
+    position: relative;
+    /* height: 700px; */
+}
+.youtube{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f57d6f;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.youtube i{
+    line-height: 100px;
+    font-size: 50px;
+    color: white;
+}
+
+/* product */
+.product h3{
+    font-size: 30px;
+    color: #404040;
+    font-weight: 600;
+}
+.product p{
+    font-size: 18px;
+    color: var(--grey);
+}
+
+/* Counter */
+.benefits{
+    background-image: url("../img/bgimg10.jpg");
+    background-position-y: 95%;
+}
+.counter div {
+    color: #fff;
+}
+.counter h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 10px;
+}
+.counter span{
+    font-size: 40px;
+    font-weight: 600;
+}
+.counter h3{
+    font-size: 20px;
+}
+
+/* facts */
+.facts p, .map h3{
+    font-size: 20px;
+    color: #404040;
+    font-weight: 600;
+}
+.facts ul li, .map p{
+    font-size: 18px;
+    color: var(--grey);
+}
+
+/* road map */
+.map{
+    position: relative;
+}
+.way{
+    border-left: 2px solid #43c1a8;
+}
+.map::before, .map::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #43c1a8;
+    left: 0px;
+    top: 0;
+}
+.map::after{
+    border: 1px solid #43c1a8;
+    transform: scale(2);
+    background-color: transparent;
+}
+
+
+/* work way */
+.work{
+    position: relative;
+}
+
+
+/* Crowdsale */
+.sale-info h3{
+    color: #404040;
+    font-size: 25px;
+    font-weight: 700;
+}
+.sale-info p{
+    color: var(--grey);
+}
+
+/* Papers */
+.papers, .about-team{
+    background-image: url("../img/sectoin_bg_2.png");
+    background-color: #eef2f4;
+}
+.papers i{
+    font-size: 100px;
+    color: #43c1a8;
+}
+.papers p{
+    font-size: 20px;
+    color: #404040;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* FAQ */
+.accordion-button{
+    font-size: 25px;
+    color: #464646;
+    font-weight: 700;
+}
+.accordion-body{
+    font-size: 18px;
+    color: #888a8b;
+}
+.accordion-button:not(.collapsed){
+    color: #464646;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus{
+    border-color: transparent;
+}
+.accordion-button::after{
+    background-image: url("../img/plus\ \(1\).png");
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../img/minus-sign.png");
+}
+
+/* team */
+.team{
+    background-color: #eef2f4;
+}
+.team span, .advisors span{
+    top: 20%;
+    left: 75%;
+    width: 30px;
+    height: 30px;
+}
+.team h2, .advisors h2{
+    font-size: 20px;
+    color: #404040;
+    font-weight: 700;
+    margin: 10px 0;
+    line-height: 10px;
+}
+.team p{
+    font-size: 16px;
+    color: #9ca4a8;
+}
+
+/* Advisors */
+.advisors{
+    padding-top: 100px;
+}
+.advisors h2{
+    margin: 20px 0;
+}
+.advisors p{
+    font-size: 18px;
+    color: #888a8b;
+}
+.advisors span{
+    width: 50px;
+    height: 50px;
+}
+
+/* footer */
+footer, .cr{
+    background-color: #292b30;
+}
+footer p{
+    font-size: 18px;
+}
+footer .icons i{
+    color: #5a5d63;
+    margin: 0 10px;
+}
+footer .icons i:hover{
+    color: white;
+}
+footer h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+footer ul li{
+    margin: 10px 0;
+}
+footer a{
+    font-size: 18px;
+    color: white;
+}
+footer ul li a:hover{
+    color: #565960;
+}
+.subscribe-bg{
+    background-color: #222427;
+}
+
+.cr p{
+    color: #5a5d63;
+}
+
+
+/* About Page */
+.about{
+    height: 600px;
+}
+
+/* counter */
+.about-counter h1, .about-counter span{
+    color: var(--light-green);
+}
+.about-counter h3{
+    color: #404040;
+}
+
+/* service page */
+.help{
+    background-image: url("../img/contact_bg.jpg");
+    background-position-y: 50%;
+    position: relative;
+    height: 400px;
+}
+.overlay{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+.h-400{
+    height: 400px;
+}
+.help p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Contact Page */
+.form-control:focus{
+    box-shadow: none;
+    border-color: black;
+}
+.comments{
+    border-radius: 30px;
+}
+
+/* Blog Page */
+.blog .card-body{
+    padding: 30px 20px 30px 10px;
+}
+.blog .card-subtitle{
+    color: var(--light-green);
+    font-size: 16px;
+}
+.blog .card-title{
+    font-size: 25px;
+    color: #404040;
+    font-weight: 700;
+}
+.blog .card-text{
+    font-size: 18px;
+    color: var(--grey);
+}
+.blog span{
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.blog .card:hover{
+    box-shadow: 0 29px 18px 0 rgb(154 154 154 / 26%);
+}
+.blog .card:hover img{
+    transform: scale(1.2);
+}
+.blog h5.card-title:hover{
+    color: var(--light-green);
+}
